@@ -1,17 +1,14 @@
 import Headings from "./headings.js";
-
+import StudentInfo from "./student-info.js";
+import Link from "next/link";
 export default function Page() {
-    let a = 10;
-    let b = 25;
-    let c = a + b;
+   
   return (
     // <></> is a fragment, a way to group multiple elements in a single return statement
    // {} is used to switch between JSX and JavaScript
-    <main>
-        <Headings/>
- 
-        <p>Sum of {a} and {b} is {c} </p>
-
-    </main>
+   <main>
+    <StudentInfo/>
+    <Link href="/">Main Page</Link>
+   </main>
   );  
 }

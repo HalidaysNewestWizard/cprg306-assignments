@@ -1,5 +1,5 @@
 export default function Headings() {
-  return  <h1>My week 2</h1>;
+  return  <h1>CPRG 306:Web Development  2  Assignments </h1>;
       
    
     
