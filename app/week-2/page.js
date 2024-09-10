@@ -7,6 +7,7 @@ export default function Page() {
     // <></> is a fragment, a way to group multiple elements in a single return statement
    // {} is used to switch between JSX and JavaScript
    <main>
+    <p>Shopping list</p>
     <StudentInfo/>
     <Link href="/">Main Page</Link>
    </main>
