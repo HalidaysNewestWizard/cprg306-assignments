@@ -10,7 +10,7 @@ export default function Page() {
         <ul>
           <li>
             <Link href="week-2">
-              Student Info
+              Week 2 Assignment
             </Link>
           </li>
 
