@@ -1,5 +1,5 @@
-import Headings from "./week-2/headings"
-import Link from "next/link"
+import Headings from "./week-2/headings";
+import Link from "next/link";
 
 
 export default function Page() {
