@@ -3,11 +3,14 @@ import Headings from "../week-2/headings";
 import Link from "next/link";
 
 
+
 export default function Page() {
   return (
     <main >
-      <Headings className=" text-red-600"/>
-     <ItemList className=" bg-cyan-400 border border-purple-800"/>
+      <Headings/>
+     {/* <img src={require('./images/bean.jpg')} alt="The BEAN"className='h-300 w-100'/> */}
+     
+     <ItemList />
      <Link href="/">Main Page</Link>
     </main>
   );

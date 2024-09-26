@@ -5,15 +5,18 @@ export default function ItemList() {
         <div>
             <h1 className='text-xl'>Shopping List</h1>
             <div className=''>
-            <Items name="Apple" quantity="5" category="Fruit" />
-            <Items name="Banana" quantity="6" category="Fruit" />
-            <Items name="Orange" quantity="7" category="Fruit" />
-            <Items name="Milk" quantity="2" category="Dairy" />
-            <Items name="Eggs" quantity="12" category="Dairy" />
-            <Items name="Cheese" quantity="1" category="Dairy" />
-            <Items name="Bread" quantity="1" category="Bakery" />
-            <Items name="Cake" quantity="1" category="Bakery" />
-            <Items name="Croissant" quantity="2" category="Bakery" />
+            <Items name="milk, 4 L 🥛" quantity="1" category="Dairy" />
+            <Items name="bread 🍞" quantity="2" category="Bakery" />
+            <Items name="bananas 🍌" quantity="6" category="Produce" />
+            <Items name="eggs, dozen 🥚" quantity="2" category="Dairy" />
+            <Items name="broccoli 🥦" quantity="3" category="Produce" />
+            <Items name="chicken breasts, 1 kg 🍗" quantity="1" category="Meat" />
+            <Items name="Pasta sauce 🍝" quantity="3" category="Canned Goods" />
+            <Items name="spaghetti, 454 g 🍝" quantity="2" category="Dry Goods" />
+            <Items name="toilet paper, 12 pack 🧻" quantity="1" category="Household" />
+            <Items name="paper towels, 6 pack" quantity="1" category="Household" />
+            <Items name="dish soap 🍽️" quantity="1" category="Household" />
+            <Items name="hand soap 🧼" quantity="4" category="Household" />
              </div>   
         </div>
     );
