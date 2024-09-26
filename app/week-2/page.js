@@ -1,6 +1,6 @@
 import Headings from "./headings.js";
 import StudentInfo from "./student-info.js";
-import Link from "next/link";
+import Return from "../return.js";
 export default function Page() {
    
   return (
@@ -13,7 +13,7 @@ export default function Page() {
     
     <StudentInfo/>
     
-    <Link href="/">Main Page</Link>
+   <Return></Return>
     </div>
    </main>
   );  
