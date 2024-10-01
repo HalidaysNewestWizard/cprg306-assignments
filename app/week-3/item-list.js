@@ -4,7 +4,7 @@ export default function ItemList() {
     return (
         <div>
             <h1 className='text-xl'>Shopping List</h1>
-            <div className=''>
+            <div >
             <Items name="milk, 4 L 🥛" quantity="1" category="Dairy" />
             <Items name="bread 🍞" quantity="2" category="Bakery" />
             <Items name="bananas 🍌" quantity="6" category="Produce" />
