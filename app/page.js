@@ -1,7 +1,7 @@
 import Headings from "./week-2/headings";
 import Link from "next/link";
 import Profile from "./week-3/profile";
-import Bean from "/public/images/Bean.jpg";
+
 import Image from "next/image";
 
 export default function Page() {
