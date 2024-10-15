@@ -10,7 +10,7 @@ const Page = () => {
       
            
           
-           <div  className='flex flex-col '>
+           <div  className="flex-col justify-center ">
             <NewItem/>
           
             <Return/> 
