@@ -11,7 +11,7 @@ import itemsJson from "./items.json";
 export default function ItemList() {
   // sort the items array by name
   // shallow copy of the itemsJson array
-  // sort the items array by name
+
   //  to sort array using state we need to use the useState hook on the array to track the change of the list
   //  and then use the setItems method to update the list
   const [items, setItems] = useState([...itemsJson]);
@@ -43,7 +43,6 @@ export default function ItemList() {
       setItems(sortedItems);
     }
   };
-  // sort the items array by category
 
   return (
     <div>
@@ -51,7 +50,7 @@ export default function ItemList() {
       <div>
         <button
           type="button"
-          className="text-l border-2 rounded-md bg-orange-500 w-40"
+          className="text-l  border-2 rounded-md bg-orange-500  w-40"
           onClick={SortByName}
         >
           Name

@@ -11,9 +11,10 @@ export default function Page() {
       <Profile />
       <ul>
         {pictureJson.map((picture) => (
-          <li key={picture.name} className="py-5">
+          <li key={picture.name} className=" my-5 w-44 h-60 rounded-md">
             <p>
               <Image
+                className="w-44 h-88 rounded-md"
                 src={picture.imageUrl}
                 alt={picture.name}
                 width={240}
