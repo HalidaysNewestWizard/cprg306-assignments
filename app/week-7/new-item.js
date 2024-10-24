@@ -6,7 +6,7 @@ export default function NewItem({ onAddItem }) {
 
   const [quantity, setQuantity] = useState(0);
 
-  const [category, setCategory] = useState("Produce");
+  const [category, setCategory] = useState("MakeSelection");
 
   const increment = () => {
     setQuantity(parseInt(quantity + 1));
@@ -75,11 +75,13 @@ export default function NewItem({ onAddItem }) {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
+              <option value="MakeSelection">Make Selection</option>
               <option value="Produce">Produce</option>
               <option value="Dairy">Dairy</option>
               <option value="Bakery">Bakery</option>
               <option value="Meat">Meat</option>
               <option value="Frozen">Frozen</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <div className="flex text-xl  w-96  border-2 justify-around">
