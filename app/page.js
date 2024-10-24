@@ -9,21 +9,6 @@ export default function Page() {
     <main>
       <Headings />
       <Profile />
-      <ul>
-        {pictureJson.map((picture) => (
-          <li key={picture.name} className=" my-5 w-44 h-60 rounded-md">
-            <p>
-              <Image
-                className="w-44 h-88 rounded-md"
-                src={picture.imageUrl}
-                alt={picture.name}
-                width={240}
-                height={120}
-              />
-            </p>
-          </li>
-        ))}
-      </ul>
 
       <ul>
         <li>
@@ -41,6 +26,24 @@ export default function Page() {
         <li>
           <Link href="week-6">Week 6 Assignment</Link>
         </li>
+        <li>
+          <Link href="week-7">Week 7 Assignment</Link>
+        </li>
+      </ul>
+      <ul>
+        {pictureJson.map((picture) => (
+          <li key={picture.name} className=" my-5 w-44 h-60 rounded-md">
+            <p>
+              <Image
+                className="w-44 h-88 rounded-md"
+                src={picture.imageUrl}
+                alt={picture.name}
+                width={240}
+                height={120}
+              />
+            </p>
+          </li>
+        ))}
       </ul>
     </main>
   );
