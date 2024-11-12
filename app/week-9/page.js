@@ -1,27 +1,41 @@
+'use client';
+
 // import the useUserAuth hook from the auth-context file
-import { useUserAuth } from './_utils/auth-contex';
+import { useUserAuth } from './_utils/auth-context';
 
-//ues th useUserAuth hook to get the user object and the login and logout functions
-const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+export default function Page() {
+  //ues th useUserAuth hook to get the user object and the login and logout functions
+  const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
-//if the user object is null, display the login button
-if (!user) {
-  return <button onClick={gitHubSignIn}>Login with GitHub</button>;
+  // sign in to firebase with github authenication
+  const login = async () => {
+    await gitHubSignIn();
+  };
+  //sign out of firebase
+  const logout = async () => {
+    await firebaseSignOut();
+  };
+  // display the user object
+
+  return (
+    <main>
+      <h1>Week 9</h1>
+      <div>
+        {user ? (
+          <div>
+            <p>
+              Welcome , {user.displayName} {user.email}
+            </p>
+            <button onClick={logout}>Sign out</button>
+          </div>
+        ) : (
+          <div>
+            <p>Welcome, Please sign in</p>
+            <button onClick={login}>Sign in with GitHub</button>
+          </div>
+        )}
+        <p>Welcome to the Landing page </p>
+      </div>
+    </main>
+  );
 }
-
-// sign in to firebase with github authenication
-await gitHubSignIn();
-
-//sign out of firebase
-await firebaseSignOut();
-
-// display the user object
-
-return (
-  <div>
-    <p>Welcome to the Landing page </p>
-    <p>
-      Welcome , {user.displayName} {user.email}
-    </p>
-  </div>
-);
