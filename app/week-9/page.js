@@ -19,6 +19,7 @@ await firebaseSignOut();
 
 return (
   <div>
+    <p>Welcome to the Landing page </p>
     <p>
       Welcome , {user.displayName} {user.email}
     </p>
