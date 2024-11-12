@@ -32,6 +32,12 @@ export default function Page() {
         <li>
           <Link href='week-8'>Week 8 Assignment</Link>
         </li>
+        <li>
+          <Link href='week-9'>Week 9 Assignment</Link>
+        </li>
+        <li>
+          <Link href='react-pract'>Don't worry about this</Link>
+        </li>
       </ul>
       <ul>
         {pictureJson.map((picture) => (
