@@ -3,6 +3,7 @@ import Headings from '../week-2/headings';
 import ExpenseList from './expenseList';
 import ExpenseTracker from './expenseTracker';
 import { useState } from 'react';
+import Blogs from './blogs/page';
 
 export default function Page() {
   const onAddExpense = (expense) => {
@@ -18,6 +19,8 @@ export default function Page() {
   return (
     <div>
       <Headings />
+      <Blogs />
+
       <div>
         <ExpenseTracker onAddExpense={onAddExpense} />
       </div>

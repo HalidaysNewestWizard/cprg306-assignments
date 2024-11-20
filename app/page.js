@@ -36,6 +36,9 @@ export default function Page() {
           <Link href='week-9'>Week 9 Assignment</Link>
         </li>
         <li>
+          <Link href='week-10'>Week 10 Assignment</Link>
+        </li>
+        <li>
           <Link href='react-pract'>Don't worry about this</Link>
         </li>
       </ul>

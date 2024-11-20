@@ -21,7 +21,7 @@ export default function Page() {
 
   return (
     <main>
-      <h1>Week 9</h1>
+      <h1>Week 10</h1>
       <div>
         {user ? (
           <div>
@@ -30,7 +30,7 @@ export default function Page() {
             </p>
             <button onClick={logout}>Sign out</button>
             <h1>
-              <Link href='/week-9/shopping-list'>Shopping List</Link>
+              <Link href='/week-10/shopping-list'>Shopping List</Link>
             </h1>
           </div>
         ) : (
@@ -39,7 +39,7 @@ export default function Page() {
             <button onClick={login}>Sign in with GitHub</button>
           </div>
         )}
-        <p>Welcome to the Landing page </p>'
+        <p>Welcome to the Landing page </p>
         <Return />
       </div>
     </main>
